@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'museo300';
+    src: url('../fonts/museo_300-webfont.woff2') format('woff2'),
+         url('museo_300-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo100';
+    src: url('../fonts/museo_100-webfont.woff2') format('woff2'),
+         url('museo_100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	box-sizing: border-box;
+	transition: all .25s linear;
+}
+
+.container{
+	width:800px;
+	height: 600px;
+	background-image: url(../img/bg_dots.png),url(../img/bg_gold.png), url(../img/bg.png);
+	/*background:url(../img/bg.png) no-repeat center;*/
+	margin: 50px auto;
+	position: relative;
+	
+}
+
+.card{
+	width: 685px;
+	height:390px;
+	background-color: rgb(17, 26, 40);
+	position: absolute;
+	top: 0;left: 0;bottom: 0;right: 0;
+	margin:auto;
+	font-size: 0;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+	
+
+}
+
+.card__logo{
+	display: inline-block;
+}
+
+.card__galary{
+	width: 64%;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.card__desc{
+	width: 36%;
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'museo300' ,sans-serif;
+	padding-top: 50px;
+}
+
+.card__image{
+	width: 80%;
+	margin:60px auto;
+
+}
+.card__image img{
+	width: 100%;
+
+}
+
+.card__preview{
+	text-align: center;
+}
+
+
+.card__preview li{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	/*background-color: #ffffff;*/
+	margin-left: 7px;
+}
+
+.card__preview li:hover{
+	transform: scale(1.2);
+	border: 1px solid  #4f5560; 
+}
+
+.card__title{
+	color: #fff;
+	font-size: 24px;
+	font-family: 'museo100' ,sans-serif;
+	margin-bottom: 15px;
+}
+
+.card__subtitle{
+	font-family:  'museo100' ,sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	opacity: 0.6;
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+.card__stars{
+	display: inline-block;
+	padding-left: 0;
+
+}
+
+.card__star{
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: url(../img/star.svg) no-repeat center;
+	margin-right: 5px;
+
+}
+
+.card__star-filled{
+	background-image: url(../img/star-y.svg);
+}
+
+.form{
+	margin-top: 25px;
+}
+
+.form__select{
+	display: inline-block ;
+	font-size: 16px;
+	background-color: transparent;
+	border: 1px solid #4f5560;
+	color:rgba(255, 255, 255, 0.6);
+	font-family: 'museo100' ,sans-serif;
+	padding: 8px 20px 8px 10px;
+	margin-right: 5px;
+	-webkit-appearance: none;
+    background-image: url(../img/down-arrow.svg);
+    background-position: right 5px center;
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+
+.form__select:focus{
+	outline: none;
+}
+
+.form__select option{
+	border: 1px solid #1f273f;
+	background-color:#1f273f;
+}
+
+.form__button{
+	font-size: 16px;
+	font-family: 'museo100' ,sans-serif;
+	background-color: #202835;
+	padding: 8px 55px 8px 55px;
+	margin-top: 25px;
+	outline: none;
+	border: 1px solid #4f5560;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.card__preview-gray{
+	background-color: #1f273f;
+}
+.card__preview-white{
+	background-color: #fff;
+}
+
+.card__preview-red{
+	background-color: #ed3333;
+}
+
+.card__preview-green{
+	background-color: #29e3ea;
+}
